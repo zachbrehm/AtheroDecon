@@ -48,7 +48,7 @@ duplicatedSamples <- which(duplicated(rse_coronary$gtex.subjid))
 
 rse_coronary <- rse_coronary[, -duplicatedSamples]
 
-cac <- read_excel("Coronary_artery_case_images_8.27.20.xlsx")
+cac <- read_excel("Coronary_artery_case_images.xlsx")
 
 cacSub <- subset(cac, `Specimen ID` %in% rse_coronary$histologyID)
 ## one duplicated Specimen ID
